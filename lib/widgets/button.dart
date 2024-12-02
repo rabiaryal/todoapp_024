@@ -26,7 +26,7 @@ class MyButton extends StatelessWidget {
       child: Container(
         height: height,
         width: width,
-        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
         decoration: BoxDecoration(
           color: AppColors.buttonColor,
           borderRadius: BorderRadius.circular(8),
@@ -34,7 +34,7 @@ class MyButton extends StatelessWidget {
             BoxShadow(
               color: AppColors.blackColor.withOpacity(0.2),
               blurRadius: 6,
-              offset: Offset(0, 3),
+              offset: const Offset(0, 3),
             ),
           ],
         ),
@@ -44,7 +44,7 @@ class MyButton extends StatelessWidget {
             children: [
               if (icon != null) ...[
                 icon!, // Add the widget icon
-                SizedBox(width: 8), // Space between icon and label
+                const SizedBox(width: 8), // Space between icon and label
               ],
               if (label != null)
                 Text(

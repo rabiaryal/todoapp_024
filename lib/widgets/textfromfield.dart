@@ -3,13 +3,13 @@ import 'package:todoapp_025/widgets/apptextstyle.dart';
 
 class BuildTextFormField extends StatefulWidget {
   const BuildTextFormField({
-    Key? key,
+    super.key,
     this.noOfLine = 1,
     this.hintText = '',
     this.inputType = TextInputType.name,
     required this.controller,
     required this.labelText,
-  }) : super(key: key);
+  });
 
   final int noOfLine;
   final Widget labelText;
@@ -112,6 +112,78 @@ class _BuildTextFormFieldState extends State<BuildTextFormField> {
 //           border: OutlineInputBorder(
 //             borderRadius: BorderRadius.circular(15),
 //           )),
+//     );
+//   }
+// }
+
+
+// import 'package:flutter/material.dart';
+// import 'package:todoapp_025/widgets/apptextstyle.dart';
+
+// class BuildTextFormField extends StatefulWidget {
+//   const BuildTextFormField({
+//     Key? key,
+//     this.noOfLine = 1,
+//     this.hintText = '',
+//     this.inputType = TextInputType.name,
+//     required this.controller,
+//     required this.labelText,
+//     required this.validator, // Validator function
+//   }) : super(key: key);
+
+//   final int noOfLine;
+//   final Widget labelText;
+//   final String hintText;
+//   final TextEditingController controller;
+//   final TextInputType inputType;
+//   final String? Function(String?) validator; // Validator function
+
+//   @override
+//   _BuildTextFormFieldState createState() => _BuildTextFormFieldState();
+// }
+
+// class _BuildTextFormFieldState extends State<BuildTextFormField> {
+//   late FocusNode focusNode;
+
+//   @override
+//   void initState() {
+//     super.initState();
+//     focusNode = FocusNode();
+//   }
+
+//   @override
+//   void dispose() {
+//     widget.controller.dispose();
+//     focusNode.dispose();
+//     super.dispose();
+//   }
+
+//   void _unfocusTextField() {
+//     focusNode.unfocus();
+//   }
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return GestureDetector(
+//       onTap: _unfocusTextField,
+//       child: TextFormField(
+//         controller: widget.controller,
+//         keyboardType: widget.inputType,
+//         focusNode: focusNode,
+//         minLines: widget.noOfLine,
+//         maxLines: 4,
+//         style: AppTextStyles.inputText,
+//         decoration: InputDecoration(
+//           hintText: widget.hintText,
+//           hintStyle: AppTextStyles.hintText,
+//           label: widget.labelText,
+//           labelStyle: AppTextStyles.labelText,
+//           border: OutlineInputBorder(
+//             borderRadius: BorderRadius.circular(15),
+//           ),
+//         ),
+//         validator: widget.validator, // Use the validator function
+//       ),
 //     );
 //   }
 // }

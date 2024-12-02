@@ -60,7 +60,7 @@ class _UserDetailsPageState extends State<UserDetailsPage> {
                 ),
                 onPressed: () {
                   Navigator.push(
-                      context, MaterialPageRoute(builder: (_) => HomeScreen()));
+                      context, MaterialPageRoute(builder: (_) => const HomeScreen()));
                 })
           ],
         ),
