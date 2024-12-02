@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:todoapp_025/screens/addtaskpage/widgets/textfromfield.dart';
+import 'package:todoapp_025/widgets/textfromfield.dart';
 import 'package:todoapp_025/widgets/appcolors.dart';
 import 'package:todoapp_025/widgets/apptextstyle.dart';
 import 'package:todoapp_025/widgets/button.dart';
