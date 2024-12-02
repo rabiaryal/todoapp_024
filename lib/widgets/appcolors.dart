@@ -2,16 +2,21 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   // Primary Theme Colors
+
+  static const Color blackColor = Colors.black;
+  static const Color whiteColor = Colors.white;
   static const Color primaryColor = Color(0xFF6200EE); // Main brand color
   static const Color secondaryColor = Color(0xFF03DAC6); // Accent color
 
   // Background and Surface Colors
   static const Color backgroundColor = Color(0xFFFFFFFF); // App background
-  static const Color surfaceColor = Color(0xFFF1F1F1); // Card or surface elements
+  static const Color surfaceColor =
+      Color(0xFFF1F1F1); // Card or surface elements
 
   // Text Colors
   static const Color textPrimary = Color(0xFF000000); // Main text color
-  static const Color textSecondary = Color(0xFF757575); // Secondary text or muted color
+  static const Color textSecondary =
+      Color(0xFF757575); // Secondary text or muted color
 
   // Button Colors
   static const Color buttonColor = Color(0xFF6200EE); // Button background color
