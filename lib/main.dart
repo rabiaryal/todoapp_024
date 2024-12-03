@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:todoapp_025/screens/home/home.dart';
 import 'package:todoapp_025/userdetails/userdetails.dart';
 
 void main() {
